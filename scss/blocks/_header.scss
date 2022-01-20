@@ -1,0 +1,173 @@
+.header-inner{
+  display: flex;
+  align-items: center;
+  padding: 45px 0;
+}
+
+.header-inner__logo{
+  vertical-align: middle;
+}
+
+.header-inner__mobile-logo{
+  display: none;
+}
+
+.header-inner__navbar{
+  margin-left: auto;
+}
+
+.nav__list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item{
+  margin-left: 33px;
+}
+
+.nav__link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  color: #83888F;
+  transition: all 0.4s ease;
+
+  &:hover{
+    color: #333D4B;
+  }
+}
+
+.site-header__btn{
+  display: none;
+  margin-left: auto;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+
+@media only screen and (max-width:420px){
+
+  .site-header--active .nav__list{
+    display: block;
+  }
+
+  .site-header{
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-inner{
+    padding: 35px 0;
+  }
+
+  .header-inner__logo{
+    display: none;
+  }
+
+  .header-inner__mobile-logo{
+    display: block;
+  }
+
+  .nav__list{
+    display: none;
+    position: absolute;
+    top: 113px;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 420px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 70px 300px;
+    background-color: #A2A2A2;
+    border-radius: 10px;
+    background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  }
+
+
+  .nav__item{
+    text-align: center;
+  }
+
+  .nav__item + .nav__item{
+    margin-top: 32px;
+  }
+
+  .nav__link{
+    font-family: $main-family;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    text-align: center;
+  }
+
+
+  .site-header__btn{
+    display: block;
+  }
+
+}
+
+
+@media only screen and (max-width:620px){
+
+  .site-header--active .nav__list{
+    display: block;
+  }
+
+  .site-header{
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-inner{
+    padding: 40px 0;
+  }
+
+  .nav__list{
+    display: none;
+    position: absolute;
+    top: 114px;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    max-width: 620px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 70px 300px;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+  }
+
+
+  .nav__item{
+    text-align: center;
+  }
+
+  .nav__item + .nav__item{
+    margin-top: 32px;
+  }
+
+  .nav__link{
+    font-family: $main-family;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    text-align: center;
+  }
+
+
+  .site-header__btn{
+    display: block;
+  }
+
+}
